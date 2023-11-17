@@ -1,0 +1,196 @@
+
+  
+  .fake-browser {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: center;
+    width: 900px;
+    height: 600px;
+    border: 1px solid black;
+    border-radius: 1px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5%;
+    box-shadow: 0 0px 20px rgb(83, 83, 83);
+  }
+  .fake-browser .fake-browser-header {
+    background-color: #918d8d5e;
+    height: 44px;
+    display: flex;
+    align-items: center;
+  }
+  .fake-browser .fake-browser-header .action-btns {
+    min-width: 100px;
+  }
+  .fake-browser .fake-browser-header .action-btns span {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin-left: 10px;
+    border-radius: 50%;
+    float: left;
+  }
+  .fake-browser .fake-browser-header .action-btns span:first-child {
+    background-color: red;
+  }
+  .fake-browser .fake-browser-header .action-btns span:nth-child(2) {
+    background-color: orange;
+  }
+  .fake-browser .fake-browser-header .action-btns span:nth-child(3) {
+    background-color: green;
+  }
+  .fake-browser .fake-browser-header .address-bar {
+    background-color: white;
+    padding: 4px 10px;
+    border-radius: 4px;
+    flex: 1;
+  }
+  .fake-browser .fake-browser-header .address-bar input {
+    width: 100%;
+    border: none;
+    padding: 0;
+    outline: none;
+    font-size: 12px;
+  }
+  .fake-browser .fake-browser-header .setting-more {
+    min-width: 100px;
+    text-align: right;
+    padding-right: 15px;
+  }
+  .fake-browser .fake-browser-header .setting-more .more-btn {
+    position: relative;
+  }
+  .fake-browser .fake-browser-header .setting-more .more-btn,
+  .fake-browser .fake-browser-header .setting-more .more-btn:before,
+  .fake-browser .fake-browser-header .setting-more .more-btn:after {
+    display: inline-block;
+    height: 3px;
+    width: 20px;
+    border-radius: 2px;
+    background-color: #999;
+    vertical-align: middle;
+  }
+  .fake-browser .fake-browser-header .setting-more .more-btn:before, .fake-browser .fake-browser-header .setting-more .more-btn:after {
+    content: "";
+    position: absolute;
+    left: 0;
+  }
+  .fake-browser .fake-browser-header .setting-more .more-btn:before {
+    top: -6px;
+  }
+  .fake-browser .fake-browser-header .setting-more .more-btn:after {
+    bottom: -6px;
+  }
+  .fake-browser .fake-window-body {
+    flex: 1;
+    overflow: hidden;
+    justify-content: "center";
+  }
+  .fake-browser .fake-window-body iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  .nav{
+    ---nav-bg: #333366;
+    ---nav-color: #8395AF;
+    
+
+  }
+  div[disabled] {
+    pointer-events: none;
+  opacity: 0.7;
+    
+  }
+ 
+nav{
+  background-color: "B5B5B5";
+  width:100%;
+  height: 35px;
+  padding: 5px 0;
+  display:block;
+  position:relative;
+  z-index:99;
+  }
+#hamburger-menu{
+  color: nav-color;
+  vertical-align:middle;
+  display:inline-block;
+  transition: .1s;
+  cursor: pointer;
+  &:hover{
+    color: lighten(nav-color, 50%);
+  }
+}
+menu{
+  background-color: black;
+  position:relative;
+  display:inline-block;
+  z-index:10;
+  height:4000px;
+  color: #7e7e7e;
+  padding: 5px 20px;
+}
+
+.menu-list{
+  list-style: none;
+  display:inline-block;
+  padding:0;
+  margin:0 0 0 20px;
+  
+  position:relative;
+  
+  li{
+    display: inline-block;
+    margin: 0 12px;
+    vertical-align: middle;
+    
+    a{
+      color: #7e7e7e;
+      text-decoration: none;
+      transition: .1s;
+      &:hover{
+        color: black;
+      }
+    }
+  }
+}
+
+.nav-search{
+  display:inline-block;
+  position:absolute;
+  z-index:1;
+  left:0;
+  width:100%;
+  i{
+    position:absolute;
+    color: lighten(nav-color, 10%);
+    left:655px;
+    z-index: 5;
+    padding:8px 15px;
+  }
+  input{
+  height:35px;  
+    box-shadow: none;
+  border: 0;
+    border-radius: 3px;
+    width:calc(100% - 900px);
+    position:absolute;
+    background-color: #485D82;
+    padding: 10px 10px 10px 40px;
+    color: lighten(nav-color, 30%);
+    margin-left: 660px;
+    &::placeholder{
+      color: lighten(nav-color, 10%);
+      opacity:1;
+    }
+  }
+}
+
+.notification-number{
+  position:absolute;
+  font-size:12px;
+  font-weight:600;
+  color: lighten(nav-color, 30%);
+  top:-2px;
+}
